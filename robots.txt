@@ -1,3 +1,15 @@
 User-agent: *
 Disallow: /admin/
 Disallow: /search/
+Disallow: /wp-admin/
+Disallow: /cgi-bin/
+Disallow: *?
+Disallow: /*.pdf$
+Disallow: /*.doc$
+Disallow: /*.xls$
+Disallow: /*.zip$
+Disallow: /*.rar$
+Disallow: /*.docx$
+Disallow: /*.xlsx$
+
+Sitemap: https://live-fish.kz/sitemap.xml  # Укажи свой домен!
