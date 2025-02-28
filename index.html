@@ -28,18 +28,31 @@
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "Живая рыба Карп",
-  "image": "https://live-fish.kz/img/carpimg1.jpg",
+  "image": [
+    "https://live-fish.kz/img/carpimg1.jpg",
+    "https://live-fish.kz/video/carpvd1.mp4"
+  ],
   "description": "Свежий живой карп с доставкой по Казахстану.",
+  "sku": "carp-001",
   "brand": {
     "@type": "Thing",
     "name": "Живая рыба"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://live-fish.kz/#fish",
+    "priceCurrency": "KZT",
+    "price": "2300",
+    "priceValidUntil": "2025-12-31",
+    "availability": "https://schema.org/InStock",
+    "itemCondition": "https://schema.org/NewCondition"
   },
   "video": {
     "@type": "VideoObject",
     "name": "Живая рыба Карп - видеообзор",
     "description": "Свежий живой карп с доставкой по Казахстану. Гарантия свежести!",
     "thumbnailUrl": "https://live-fish.kz/img/carpimg1.jpg",
-    "uploadDate": "2024-02-28T12:00:00Z",
+    "uploadDate": "2024-02-28T12:00:00+06:00",
     "contentUrl": "https://live-fish.kz/video/carpvd1.mp4",
     "embedUrl": "https://live-fish.kz/video/carpvd1.mp4"
   },
@@ -55,7 +68,7 @@
         "@type": "Person",
         "name": "Иван Петров"
       },
-      "datePublished": "2024-02-28T12:00:00Z",
+      "datePublished": "2024-02-28T12:00:00+06:00",
       "reviewBody": "Рыба очень свежая, доставили быстро!",
       "reviewRating": {
         "@type": "Rating",
@@ -68,7 +81,7 @@
         "@type": "Person",
         "name": "Мария Смирнова"
       },
-      "datePublished": "2024-02-26T10:30:00Z",
+      "datePublished": "2024-02-26T10:30:00+06:00",
       "reviewBody": "Все хорошо, быстрая доставка.",
       "reviewRating": {
         "@type": "Rating",
@@ -78,6 +91,7 @@
   ]
 }
 </script>
+
 
 
 </head>
@@ -212,36 +226,7 @@
                 </p>
                  <!--  Дополнительная информация о карпе -->
             </div>
-             <!--  Schema.org для товара (Карп) -->
-            <script type="application/ld+json">
-            {
-              "@context": "https://schema.org",
-              "@type": "Product",
-              "name": "Карп живой",
-              "image": [
-                "https://live-fish.kz/img/carpimg1.jpg",  //  ЗАМЕНИТЕ
-                "https://live-fish.kz/video/carpvd1.mp4"   // ЗАМЕНИТЕ
-               ],
-              "description": "Живой карп для пруда, ресторана или магазина.  Средний вес 2 кг.  Доставка по всему Казахстану.",
-              "sku": "carp-001",  //  Уникальный артикул товара
-              "brand": {
-                "@type": "Thing",
-                "name": "Живая рыба"  //  Название вашей компании
-              },
-              "offers": {
-                "@type": "Offer",
-                "url": "https://live-fish.kz/#fish",  // ЗАМЕНИТЕ
-                "priceCurrency": "KZT",
-                "price": "2300",
-                "priceValidUntil": "2025-12-31",  //  Срок действия цены
-                "availability": "https://schema.org/InStock",
-                "itemCondition": "https://schema.org/NewCondition"
-              }
-            }
-            </script>
-
         </article>
-
     </section>
 
     <section id="testimonials" data-scroll>
