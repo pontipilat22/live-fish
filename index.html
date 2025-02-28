@@ -29,8 +29,7 @@
   "@type": "Product",
   "name": "Живая рыба Карп",
   "image": [
-    "https://live-fish.kz/img/carpimg1.jpg",
-    "https://live-fish.kz/video/carpvd1.mp4"
+    "https://live-fish.kz/img/carpimg1.jpg"
   ],
   "description": "Свежий живой карп с доставкой по Казахстану.",
   "sku": "carp-001",
@@ -45,16 +44,50 @@
     "price": "2300",
     "priceValidUntil": "2025-12-31",
     "availability": "https://schema.org/InStock",
-    "itemCondition": "https://schema.org/NewCondition"
-  },
-  "video": {
-    "@type": "VideoObject",
-    "name": "Живая рыба Карп - видеообзор",
-    "description": "Свежий живой карп с доставкой по Казахстану. Гарантия свежести!",
-    "thumbnailUrl": "https://live-fish.kz/img/carpimg1.jpg",
-    "uploadDate": "2024-02-28T12:00:00+06:00",
-    "contentUrl": "https://live-fish.kz/video/carpvd1.mp4",
-    "embedUrl": "https://live-fish.kz/video/carpvd1.mp4"
+    "itemCondition": "https://schema.org/NewCondition",
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "0",
+        "currency": "KZT"
+      },
+      "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "KZ"
+      },
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 1,
+          "maxValue": 2,
+          "unitCode": "DAY"
+        },
+        "transitTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 1,
+          "maxValue": 5,
+          "unitCode": "DAY"
+        }
+      }
+    },
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "applicableCountry": "KZ",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+      "returnMethod": "https://schema.org/ReturnByMail",
+      "returnFees": "https://schema.org/ReturnFeesCustomerResponsibility",
+      "itemCondition": "https://schema.org/NewCondition",
+      "returnPolicySeasonalOverride": [
+        {
+          "@type": "MerchantReturnPolicySeasonalOverride",
+          "startDate": "2024-12-01",
+          "endDate": "2025-01-15",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnUnlimitedWindow"
+        }
+      ]
+    }
   },
   "aggregateRating": {
     "@type": "AggregateRating",
@@ -88,7 +121,16 @@
         "ratingValue": "4"
       }
     }
-  ]
+  ],
+  "video": {
+    "@type": "VideoObject",
+    "name": "Живая рыба Карп - видеообзор",
+    "description": "Свежий живой карп с доставкой по Казахстану. Гарантия свежести!",
+    "thumbnailUrl": "https://live-fish.kz/img/carpimg1.jpg",
+    "uploadDate": "2024-02-28T12:00:00+06:00",
+    "contentUrl": "https://live-fish.kz/video/carpvd1.mp4",
+    "embedUrl": "https://live-fish.kz/video/carpvd1.mp4"
+  }
 }
 </script>
 
